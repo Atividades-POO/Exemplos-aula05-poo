@@ -33,7 +33,7 @@ class Usuario:
 
     @login.setter
     def login(self, valor):
-      if valor == True:
+      if valor:
         self._login = valor
         print(f'{self.nome} já está logado no sistema')
         return
