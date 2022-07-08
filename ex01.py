@@ -2,11 +2,15 @@
 #
 # 1. Exercício 1:
 # – Crie a classe Usuario com os atributos nome, login e senha.
+# – Como você implementaria a classe para que o atributo nome só salvasse nomes
+# com CAIXA ALTA e senha uma String?
+# – Implemente!!!
 
 class Usuario:
-    def __init__(self, nome, senha, login = False): # login = False é o valor padrão do atributo login
-        self.nome = nome
-        self.senha = senha
+    def __init__(self, nome,  senha: str, login = False): # login = False é o valor padrão do atributo login se não
+                                                           # for passado nada na chamada do método
+        self.nome = nome.upper() # O atributo nome só salva nomes com caixa alta
+        self.senha = senha # O atributo senha é uma String
         self.login = login
 
     #getters
