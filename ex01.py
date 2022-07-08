@@ -11,32 +11,32 @@ class Usuario:
                                                            # for passado nada na chamada do método
         self.nome = nome.upper() # O atributo nome só salva nomes com caixa alta
         self.senha = senha # O atributo senha é uma String
-        self.login = login
+        self.login = login # O atributo login é um boolean que indica se o usuário está logado ou não
 
     #getters
     @property
     def nome(self):
         return self._nome
 
-    @property
+    @property # O atributo senha é uma String
     def senha(self):
         return self._senha
 
     @property
-    def login(self):
+    def login(self): # O atributo login é um boolean que indica se o usuário está logado ou não
         return self._login
 
     #setters
     @nome.setter
-    def nome(self, valor):
-        self._nome = valor
+    def nome(self, valor): # O atributo nome só salva nomes com caixa alta
+        self._nome = valor.upper()
 
     @senha.setter
-    def senha(self, valor):
+    def senha(self, valor: str): # O atributo senha é uma String
         self._senha = valor
 
     @login.setter
-    def login(self, valor):
+    def login(self, valor: bool): # O atributo login é um boolean que indica se o usuário está logado ou não
       if valor:
         self._login = valor
         print(f'{self.nome} já está logado no sistema')
