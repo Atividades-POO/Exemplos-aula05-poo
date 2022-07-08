@@ -1,4 +1,10 @@
 #
+# Autores:
+# Michel Silva
+# Emanuel Frank
+# Carlos Eduardo
+# data: 07/07/2022
+#
 #
 # 1. Exercício 1:
 # – Crie a classe Usuario com os atributos nome, login e senha.
